@@ -1,3 +1,6 @@
+# Curso
+CSS: dispondo elementos com Flexbox e Grid
+
 # Guia de estilos
 
 Toda a estilização que será usada no projeto dentro do figma.
