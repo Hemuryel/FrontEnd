@@ -1,3 +1,4 @@
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'a11y-p1';
+  public form: FormGroup = null;
+
+  constructor(formBuilder: FormBuilder) {
+    this.form = formBuilder.group({
+      yesNoAnswer: [null]
+    });
+  }
+
+  public submit(): void {
+    console.log(this.form.value);
+  }
 }
